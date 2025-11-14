@@ -1,0 +1,156 @@
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* General Rules */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+/* Main Header */
+
+header {
+    background-color: #295f2d;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px; */
+    padding: 10px 0;
+}
+
+#main-logo {
+    display: block;
+    width: 300px;
+    /* Margin top and bottom 0, left and right auto. Auto means equal. */
+    margin: 0 auto;
+}
+
+/* Character Nav */
+
+#character-nav {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-image: url(../images/rsz_ted-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#characters li {
+    display: inline;
+    margin: 10px;
+}
+
+#characters li img {
+    border: solid 3px #5dce64;
+    padding: 5px;
+    background-color: #295f2d;
+    box-shadow: 0px 0px 10px 0 (rgba(255, 255, 255, 0.9))
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+#characters li img:hover {
+    filter: grayscale(50%);
+    border-radius: 25% 25% 25% 25%;
+    transition: all .5s ease-in-out;
+}
+
+#instructions {
+    padding: 2px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#main-footer {
+    height: 60px;
+    background-color: rgb(40, 37, 37);
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* Lightbox Rules */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+}
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/john_bennett_render.jpg);
+}
+
+#lightbox2 {
+    background-image: url(..images/Tedisreal.png);
+}
+
+
+#lightbox3 {
+    background-image: url(../images/);
+}
+
+#lightbox4 {
+    background-image: url(..images/);
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 95vw;
+    margin-top: 50%;
+    transition: all .5 ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: green
+    
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lightbox-op {
+    line-height: 26px;
+}
